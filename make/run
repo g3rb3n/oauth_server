@@ -1,0 +1,7 @@
+#!/bin/bash
+
+. .env
+
+cd src
+uvicorn oauth_server.main:app --reload --port 8888 &
+cd -

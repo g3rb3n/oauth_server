@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. .env
+
+rsync -auv src/oauth_server $SERVER:/usr/lib/python3.5/
+rsync -auv etc/systemd/system/* $SERVER:/etc/systemd/system/
